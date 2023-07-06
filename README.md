@@ -1,3 +1,4 @@
 # johannesgaessler.github.io
 
-test
+Git repository for my Github pages.
+Currently only deals with llama.cpp performance.
