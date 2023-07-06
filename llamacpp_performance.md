@@ -4,7 +4,7 @@ title: "llama.cpp Performance Testing"
 permalink: /llamacpp_performance
 ---
 
-# This page is WIP
+# llama.cpp Performance testing (WIP)
 
 This page aims to collect performance numbers for LLaMA inference to inform hardware purchase and software configuration decisions.
 Since I am a llama.cpp developer it will be the software used for testing unless specified otherwise.
@@ -12,7 +12,7 @@ Since I am a llama.cpp developer it will be the software used for testing unless
 The usual test setup is to generate 128 tokens with an empty prompt and 2048 context.
 I am primarily using q4_0 as the quantization format for testing because it is very simple in its implementation.
 
-# Hardware
+## Hardware
 
 As of right now there are essentially two options for hardware: CPUs and GPUs (but llama.cpp lets you do hybrid inference).
 The tradeoff is that CPU inference is much cheaper and easier to scale in terms of memory capacity while GPU inference is much faster but more expensive.
@@ -23,7 +23,7 @@ Hardware used for testing:
 * Machine 1: AMD RX 3700X, 32 GB of dual-channel memory @ 3200 MHz, NVIDIA RTX 3090.
 * Machine 2: Intel Xeon E5-2683 v4, 64 GB of quad-channel memory @ 2133 MHz, NVIDIA P40, NVIDIA GTX 1070.
 
-## CPU
+### CPU
 
 For CPU inference especially the most important factor is memory bandwidth;
 the bandwidth of consumer RAM is much lower compared to the bandwidth of GPU VRAM so the actual CPU doesn't matter much.
@@ -47,7 +47,7 @@ Still, compared to the 2 t/s of 3466 MHz dual channel memory the expected perfor
 Again, there is a noticeable drop in performance when using more threads than there are physical cores (16).
 The best performance was obtained with 29 threads.
 
-## GPU
+### GPU
 
 Due to their non-modular nature the primary limitation of GPUs is the amount of VRAM that they have;
 if you cannot fit the entire model into VRAM your performance will be significantly worse since you will need to run part of the model on the CPU.
