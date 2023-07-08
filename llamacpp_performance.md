@@ -63,4 +63,4 @@ Some basic numbers for standard 2048 context:
 Due to hardware limitations the number for 65b q4_0 can only be estimated instead of actually measured.
 Beyond VRAM capacity the most important performance characteristic of GPUs is their memory bandwidth.
 The availability of integer intrinsics is also important since it allows for a more efficient handling of quantized data;
-for NVIDIA GPUs this means Turing/Volta or later.
+for NVIDIA GPUs this means Pascal or later.
