@@ -7,6 +7,12 @@ This can be observed subjectively but especially in order to optimize quantizati
 Currently a popular approach is to calculate the *perplexity* of both the quantized and unquantized models on a large corpus of text and to optimize the increase of the perplexity of the quantized model.
 However, this blog post aims argue that this is a suboptimal metric and that the *root mean square* of the *token probabilities* is a better metric.
 
+All numbers and plots in this blog post were obtained by running the `perplexity` binary of llama.cpp with the newly added `--logdir` CLI argument to generate YAML log files.
+The `wikitext.text.raw` file (obtainable via `scripts/get-wikitext-2.sh`) was used as input.
+These log files were then analyzed using a Python script.
+All relevant files can be found [on GitHub](https://github.com/JohannesGaessler/johannesgaessler.github.io/tree/master/llamacpp_quantization_metrics).
+The used models are LLaMA 2 F16 and its llama.cpp quantizations.
+
 Let us start with considering how a model produces a probability distribution for all possible $N$ tokens in its vocabulary.
 First the model puts out raw *logits* $l_n$ for each token.
 These logits cannot be interpreted sensibly on their own but they can be converted to probabilities by using *softmax*:
