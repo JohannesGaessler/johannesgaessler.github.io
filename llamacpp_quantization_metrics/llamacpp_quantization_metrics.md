@@ -74,10 +74,12 @@ In those regions softmax is very flat so changes in the logits result in only sm
 Now, let us think back to the beginning of this blog: the goal is to find a good metric for measuring the quality loss from quantization.
 The metric proposed here is the *root mean square* of the differences in token probabilities:
 
-$$\mathrm{RMS}_p = \sqrt{ \frac{1}{M} \sum_m p_m^\mathrm{Q} - p_m^\mathrm{F16} }$$
+$$\mathrm{RMS}_p = \sqrt{ \frac{1}{M} \sum_m \left[ p_m^\mathrm{Q} - p_m^\mathrm{F16} \right]^2 }$$
 
-where the upper indices indicate whether the probabilities correspond to the unquantized F16 or the quantized model.
-Effectively this metric calculates the standard deviation of the differences assuming that the mean is of the differences is 0.
+where the upper indices of the probabilities indicate whether the probabilities correspond to the unquantized F16 or the quantized model.
+The index in the sum is supposed to go from 1 to M but for some reason putting this into the LaTeX code breaks the rendering on GitHub.
+
+Effectively the above metric calculates the standard deviation of the probability differences assuming that the mean of the differences is 0.
 This approximation is unproblematic because the mean of the differences is small relative to their standard deviations (lowest ratio is for Q2_K where the standard deviation is ~4 times larger than the absolute value of the mean).
 If we now compare plots of the perplexities and the RMS of the different quantization formats we find:
 
