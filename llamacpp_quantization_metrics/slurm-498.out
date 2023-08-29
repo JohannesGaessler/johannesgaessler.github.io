@@ -1,0 +1,368 @@
+main: build = 1096 (917beb2)
+main: seed  = 1693213563
+ggml_init_cublas: found 1 CUDA devices:
+  Device 0: Tesla P40, compute capability 6.1
+llama_model_loader: loaded meta data with 16 key-value pairs and 291 tensors from models/opt/llama_2-7b-q4_1.gguf (version GGUF V1 (support until nov 2023))
+llama_model_loader: - tensor    0:                token_embd.weight q4_1     [  4096, 32000,     1,     1 ]
+llama_model_loader: - tensor    1:               output_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor    2:                    output.weight q6_K     [  4096, 32000,     1,     1 ]
+llama_model_loader: - tensor    3:              blk.0.attn_q.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor    4:              blk.0.attn_k.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor    5:              blk.0.attn_v.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor    6:         blk.0.attn_output.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor    7:            blk.0.ffn_gate.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor    8:            blk.0.ffn_down.weight q4_1     [ 11008,  4096,     1,     1 ]
+llama_model_loader: - tensor    9:              blk.0.ffn_up.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor   10:           blk.0.attn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor   11:            blk.0.ffn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor   12:              blk.1.attn_q.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor   13:              blk.1.attn_k.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor   14:              blk.1.attn_v.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor   15:         blk.1.attn_output.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor   16:            blk.1.ffn_gate.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor   17:            blk.1.ffn_down.weight q4_1     [ 11008,  4096,     1,     1 ]
+llama_model_loader: - tensor   18:              blk.1.ffn_up.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor   19:           blk.1.attn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor   20:            blk.1.ffn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor   21:              blk.2.attn_q.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor   22:              blk.2.attn_k.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor   23:              blk.2.attn_v.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor   24:         blk.2.attn_output.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor   25:            blk.2.ffn_gate.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor   26:            blk.2.ffn_down.weight q4_1     [ 11008,  4096,     1,     1 ]
+llama_model_loader: - tensor   27:              blk.2.ffn_up.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor   28:           blk.2.attn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor   29:            blk.2.ffn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor   30:              blk.3.attn_q.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor   31:              blk.3.attn_k.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor   32:              blk.3.attn_v.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor   33:         blk.3.attn_output.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor   34:            blk.3.ffn_gate.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor   35:            blk.3.ffn_down.weight q4_1     [ 11008,  4096,     1,     1 ]
+llama_model_loader: - tensor   36:              blk.3.ffn_up.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor   37:           blk.3.attn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor   38:            blk.3.ffn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor   39:              blk.4.attn_q.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor   40:              blk.4.attn_k.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor   41:              blk.4.attn_v.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor   42:         blk.4.attn_output.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor   43:            blk.4.ffn_gate.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor   44:            blk.4.ffn_down.weight q4_1     [ 11008,  4096,     1,     1 ]
+llama_model_loader: - tensor   45:              blk.4.ffn_up.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor   46:           blk.4.attn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor   47:            blk.4.ffn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor   48:              blk.5.attn_q.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor   49:              blk.5.attn_k.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor   50:              blk.5.attn_v.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor   51:         blk.5.attn_output.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor   52:            blk.5.ffn_gate.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor   53:            blk.5.ffn_down.weight q4_1     [ 11008,  4096,     1,     1 ]
+llama_model_loader: - tensor   54:              blk.5.ffn_up.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor   55:           blk.5.attn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor   56:            blk.5.ffn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor   57:              blk.6.attn_q.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor   58:              blk.6.attn_k.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor   59:              blk.6.attn_v.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor   60:         blk.6.attn_output.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor   61:            blk.6.ffn_gate.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor   62:            blk.6.ffn_down.weight q4_1     [ 11008,  4096,     1,     1 ]
+llama_model_loader: - tensor   63:              blk.6.ffn_up.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor   64:           blk.6.attn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor   65:            blk.6.ffn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor   66:              blk.7.attn_q.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor   67:              blk.7.attn_k.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor   68:              blk.7.attn_v.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor   69:         blk.7.attn_output.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor   70:            blk.7.ffn_gate.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor   71:            blk.7.ffn_down.weight q4_1     [ 11008,  4096,     1,     1 ]
+llama_model_loader: - tensor   72:              blk.7.ffn_up.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor   73:           blk.7.attn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor   74:            blk.7.ffn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor   75:              blk.8.attn_q.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor   76:              blk.8.attn_k.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor   77:              blk.8.attn_v.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor   78:         blk.8.attn_output.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor   79:            blk.8.ffn_gate.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor   80:            blk.8.ffn_down.weight q4_1     [ 11008,  4096,     1,     1 ]
+llama_model_loader: - tensor   81:              blk.8.ffn_up.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor   82:           blk.8.attn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor   83:            blk.8.ffn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor   84:              blk.9.attn_q.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor   85:              blk.9.attn_k.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor   86:              blk.9.attn_v.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor   87:         blk.9.attn_output.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor   88:            blk.9.ffn_gate.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor   89:            blk.9.ffn_down.weight q4_1     [ 11008,  4096,     1,     1 ]
+llama_model_loader: - tensor   90:              blk.9.ffn_up.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor   91:           blk.9.attn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor   92:            blk.9.ffn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor   93:             blk.10.attn_q.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor   94:             blk.10.attn_k.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor   95:             blk.10.attn_v.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor   96:        blk.10.attn_output.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor   97:           blk.10.ffn_gate.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor   98:           blk.10.ffn_down.weight q4_1     [ 11008,  4096,     1,     1 ]
+llama_model_loader: - tensor   99:             blk.10.ffn_up.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor  100:          blk.10.attn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor  101:           blk.10.ffn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor  102:             blk.11.attn_q.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  103:             blk.11.attn_k.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  104:             blk.11.attn_v.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  105:        blk.11.attn_output.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  106:           blk.11.ffn_gate.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor  107:           blk.11.ffn_down.weight q4_1     [ 11008,  4096,     1,     1 ]
+llama_model_loader: - tensor  108:             blk.11.ffn_up.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor  109:          blk.11.attn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor  110:           blk.11.ffn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor  111:             blk.12.attn_q.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  112:             blk.12.attn_k.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  113:             blk.12.attn_v.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  114:        blk.12.attn_output.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  115:           blk.12.ffn_gate.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor  116:           blk.12.ffn_down.weight q4_1     [ 11008,  4096,     1,     1 ]
+llama_model_loader: - tensor  117:             blk.12.ffn_up.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor  118:          blk.12.attn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor  119:           blk.12.ffn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor  120:             blk.13.attn_q.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  121:             blk.13.attn_k.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  122:             blk.13.attn_v.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  123:        blk.13.attn_output.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  124:           blk.13.ffn_gate.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor  125:           blk.13.ffn_down.weight q4_1     [ 11008,  4096,     1,     1 ]
+llama_model_loader: - tensor  126:             blk.13.ffn_up.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor  127:          blk.13.attn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor  128:           blk.13.ffn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor  129:             blk.14.attn_q.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  130:             blk.14.attn_k.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  131:             blk.14.attn_v.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  132:        blk.14.attn_output.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  133:           blk.14.ffn_gate.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor  134:           blk.14.ffn_down.weight q4_1     [ 11008,  4096,     1,     1 ]
+llama_model_loader: - tensor  135:             blk.14.ffn_up.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor  136:          blk.14.attn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor  137:           blk.14.ffn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor  138:             blk.15.attn_q.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  139:             blk.15.attn_k.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  140:             blk.15.attn_v.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  141:        blk.15.attn_output.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  142:           blk.15.ffn_gate.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor  143:           blk.15.ffn_down.weight q4_1     [ 11008,  4096,     1,     1 ]
+llama_model_loader: - tensor  144:             blk.15.ffn_up.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor  145:          blk.15.attn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor  146:           blk.15.ffn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor  147:             blk.16.attn_q.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  148:             blk.16.attn_k.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  149:             blk.16.attn_v.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  150:        blk.16.attn_output.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  151:           blk.16.ffn_gate.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor  152:           blk.16.ffn_down.weight q4_1     [ 11008,  4096,     1,     1 ]
+llama_model_loader: - tensor  153:             blk.16.ffn_up.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor  154:          blk.16.attn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor  155:           blk.16.ffn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor  156:             blk.17.attn_q.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  157:             blk.17.attn_k.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  158:             blk.17.attn_v.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  159:        blk.17.attn_output.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  160:           blk.17.ffn_gate.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor  161:           blk.17.ffn_down.weight q4_1     [ 11008,  4096,     1,     1 ]
+llama_model_loader: - tensor  162:             blk.17.ffn_up.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor  163:          blk.17.attn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor  164:           blk.17.ffn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor  165:             blk.18.attn_q.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  166:             blk.18.attn_k.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  167:             blk.18.attn_v.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  168:        blk.18.attn_output.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  169:           blk.18.ffn_gate.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor  170:           blk.18.ffn_down.weight q4_1     [ 11008,  4096,     1,     1 ]
+llama_model_loader: - tensor  171:             blk.18.ffn_up.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor  172:          blk.18.attn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor  173:           blk.18.ffn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor  174:             blk.19.attn_q.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  175:             blk.19.attn_k.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  176:             blk.19.attn_v.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  177:        blk.19.attn_output.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  178:           blk.19.ffn_gate.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor  179:           blk.19.ffn_down.weight q4_1     [ 11008,  4096,     1,     1 ]
+llama_model_loader: - tensor  180:             blk.19.ffn_up.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor  181:          blk.19.attn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor  182:           blk.19.ffn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor  183:             blk.20.attn_q.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  184:             blk.20.attn_k.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  185:             blk.20.attn_v.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  186:        blk.20.attn_output.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  187:           blk.20.ffn_gate.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor  188:           blk.20.ffn_down.weight q4_1     [ 11008,  4096,     1,     1 ]
+llama_model_loader: - tensor  189:             blk.20.ffn_up.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor  190:          blk.20.attn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor  191:           blk.20.ffn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor  192:             blk.21.attn_q.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  193:             blk.21.attn_k.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  194:             blk.21.attn_v.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  195:        blk.21.attn_output.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  196:           blk.21.ffn_gate.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor  197:           blk.21.ffn_down.weight q4_1     [ 11008,  4096,     1,     1 ]
+llama_model_loader: - tensor  198:             blk.21.ffn_up.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor  199:          blk.21.attn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor  200:           blk.21.ffn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor  201:             blk.22.attn_q.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  202:             blk.22.attn_k.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  203:             blk.22.attn_v.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  204:        blk.22.attn_output.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  205:           blk.22.ffn_gate.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor  206:           blk.22.ffn_down.weight q4_1     [ 11008,  4096,     1,     1 ]
+llama_model_loader: - tensor  207:             blk.22.ffn_up.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor  208:          blk.22.attn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor  209:           blk.22.ffn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor  210:             blk.23.attn_q.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  211:             blk.23.attn_k.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  212:             blk.23.attn_v.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  213:        blk.23.attn_output.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  214:           blk.23.ffn_gate.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor  215:           blk.23.ffn_down.weight q4_1     [ 11008,  4096,     1,     1 ]
+llama_model_loader: - tensor  216:             blk.23.ffn_up.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor  217:          blk.23.attn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor  218:           blk.23.ffn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor  219:             blk.24.attn_q.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  220:             blk.24.attn_k.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  221:             blk.24.attn_v.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  222:        blk.24.attn_output.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  223:           blk.24.ffn_gate.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor  224:           blk.24.ffn_down.weight q4_1     [ 11008,  4096,     1,     1 ]
+llama_model_loader: - tensor  225:             blk.24.ffn_up.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor  226:          blk.24.attn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor  227:           blk.24.ffn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor  228:             blk.25.attn_q.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  229:             blk.25.attn_k.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  230:             blk.25.attn_v.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  231:        blk.25.attn_output.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  232:           blk.25.ffn_gate.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor  233:           blk.25.ffn_down.weight q4_1     [ 11008,  4096,     1,     1 ]
+llama_model_loader: - tensor  234:             blk.25.ffn_up.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor  235:          blk.25.attn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor  236:           blk.25.ffn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor  237:             blk.26.attn_q.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  238:             blk.26.attn_k.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  239:             blk.26.attn_v.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  240:        blk.26.attn_output.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  241:           blk.26.ffn_gate.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor  242:           blk.26.ffn_down.weight q4_1     [ 11008,  4096,     1,     1 ]
+llama_model_loader: - tensor  243:             blk.26.ffn_up.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor  244:          blk.26.attn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor  245:           blk.26.ffn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor  246:             blk.27.attn_q.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  247:             blk.27.attn_k.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  248:             blk.27.attn_v.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  249:        blk.27.attn_output.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  250:           blk.27.ffn_gate.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor  251:           blk.27.ffn_down.weight q4_1     [ 11008,  4096,     1,     1 ]
+llama_model_loader: - tensor  252:             blk.27.ffn_up.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor  253:          blk.27.attn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor  254:           blk.27.ffn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor  255:             blk.28.attn_q.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  256:             blk.28.attn_k.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  257:             blk.28.attn_v.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  258:        blk.28.attn_output.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  259:           blk.28.ffn_gate.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor  260:           blk.28.ffn_down.weight q4_1     [ 11008,  4096,     1,     1 ]
+llama_model_loader: - tensor  261:             blk.28.ffn_up.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor  262:          blk.28.attn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor  263:           blk.28.ffn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor  264:             blk.29.attn_q.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  265:             blk.29.attn_k.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  266:             blk.29.attn_v.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  267:        blk.29.attn_output.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  268:           blk.29.ffn_gate.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor  269:           blk.29.ffn_down.weight q4_1     [ 11008,  4096,     1,     1 ]
+llama_model_loader: - tensor  270:             blk.29.ffn_up.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor  271:          blk.29.attn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor  272:           blk.29.ffn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor  273:             blk.30.attn_q.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  274:             blk.30.attn_k.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  275:             blk.30.attn_v.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  276:        blk.30.attn_output.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  277:           blk.30.ffn_gate.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor  278:           blk.30.ffn_down.weight q4_1     [ 11008,  4096,     1,     1 ]
+llama_model_loader: - tensor  279:             blk.30.ffn_up.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor  280:          blk.30.attn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor  281:           blk.30.ffn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor  282:             blk.31.attn_q.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  283:             blk.31.attn_k.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  284:             blk.31.attn_v.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  285:        blk.31.attn_output.weight q4_1     [  4096,  4096,     1,     1 ]
+llama_model_loader: - tensor  286:           blk.31.ffn_gate.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor  287:           blk.31.ffn_down.weight q4_1     [ 11008,  4096,     1,     1 ]
+llama_model_loader: - tensor  288:             blk.31.ffn_up.weight q4_1     [  4096, 11008,     1,     1 ]
+llama_model_loader: - tensor  289:          blk.31.attn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - tensor  290:           blk.31.ffn_norm.weight f32      [  4096,     1,     1,     1 ]
+llama_model_loader: - kv   0:                       general.architecture str     
+llama_model_loader: - kv   1:                               general.name str     
+llama_model_loader: - kv   2:                       llama.context_length u32     
+llama_model_loader: - kv   3:                     llama.embedding_length u32     
+llama_model_loader: - kv   4:                          llama.block_count u32     
+llama_model_loader: - kv   5:                  llama.feed_forward_length u32     
+llama_model_loader: - kv   6:                 llama.rope.dimension_count u32     
+llama_model_loader: - kv   7:                 llama.attention.head_count u32     
+llama_model_loader: - kv   8:              llama.attention.head_count_kv u32     
+llama_model_loader: - kv   9:     llama.attention.layer_norm_rms_epsilon f32     
+llama_model_loader: - kv  10:                          general.file_type u32     
+llama_model_loader: - kv  11:                       tokenizer.ggml.model str     
+llama_model_loader: - kv  12:                      tokenizer.ggml.tokens arr     
+llama_model_loader: - kv  13:                      tokenizer.ggml.scores arr     
+llama_model_loader: - kv  14:                  tokenizer.ggml.token_type arr     
+llama_model_loader: - kv  15:               general.quantization_version u32     
+llama_model_loader: - type  f32:   65 tensors
+llama_model_loader: - type q4_1:  225 tensors
+llama_model_loader: - type q6_K:    1 tensors
+llm_load_print_meta: format         = GGUF V1 (support until nov 2023)
+llm_load_print_meta: arch           = llama
+llm_load_print_meta: vocab type     = SPM
+llm_load_print_meta: n_vocab        = 32000
+llm_load_print_meta: n_merges       = 0
+llm_load_print_meta: n_ctx_train    = 4096
+llm_load_print_meta: n_ctx          = 512
+llm_load_print_meta: n_embd         = 4096
+llm_load_print_meta: n_head         = 32
+llm_load_print_meta: n_head_kv      = 32
+llm_load_print_meta: n_layer        = 32
+llm_load_print_meta: n_rot          = 128
+llm_load_print_meta: n_gqa          = 1
+llm_load_print_meta: f_norm_eps     = 1.0e-05
+llm_load_print_meta: f_norm_rms_eps = 1.0e-05
+llm_load_print_meta: n_ff           = 11008
+llm_load_print_meta: freq_base      = 10000.0
+llm_load_print_meta: freq_scale     = 1
+llm_load_print_meta: model type     = 7B
+llm_load_print_meta: model ftype    = mostly Q4_1
+llm_load_print_meta: model size     = 6.74 B
+llm_load_print_meta: general.name   = LLaMA
+llm_load_print_meta: BOS token = 1 '<s>'
+llm_load_print_meta: EOS token = 2 '</s>'
+llm_load_print_meta: UNK token = 0 '<unk>'
+llm_load_print_meta: LF token  = 13 '<0x0A>'
+llm_load_tensors: ggml ctx size =    0.09 MB
+llm_load_tensors: using CUDA for GPU acceleration
+llm_load_tensors: mem required  =   78.21 MB (+  256.00 MB per state)
+llm_load_tensors: offloading 32 repeating layers to GPU
+llm_load_tensors: offloading non-repeating layers to GPU
+llm_load_tensors: offloading v cache to GPU
+llm_load_tensors: offloading k cache to GPU
+llm_load_tensors: offloaded 35/35 layers to GPU
+llm_load_tensors: VRAM used: 4220 MB
+..................................................................................................
+llama_new_context_with_model: kv self size  =  256.00 MB
+llama_new_context_with_model: compute buffer total size =   71.91 MB
+llama_new_context_with_model: VRAM scratch buffer: 70.50 MB
+
+system_info: n_threads = 1 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 0 | AVX512_VBMI = 0 | AVX512_VNNI = 0 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 1 | SSE3 = 1 | SSSE3 = 1 | VSX = 0 | 
+perplexity: tokenizing the input ..
+perplexity: tokenization took 1366.69 ms
+perplexity: calculating perplexity over 655 chunks, batch_size=512
+perplexity: 0.62 seconds per pass - ETA 6.77 minutes
+[1]4.4314,[2]4.8615,[3]5.4959,[4]6.1100,[5]6.2261,[6]6.1544,[7]6.3248,[8]6.4230,[9]6.8048,[10]7.0152,[11]7.2501,[12]7.2824,[13]7.2151,[14]7.2985,[15]7.5378,[16]7.1749,[17]7.0372,[18]7.0146,[19]6.6750,[20]6.6626,[21]6.5871,[22]6.4042,[23]6.3705,[24]6.2734,[25]6.2736,[26]6.1176,[27]5.9226,[28]5.8237,[29]5.7370,[30]5.5823,[31]5.5381,[32]5.5601,[33]5.5182,[34]5.5496,[35]5.5629,[36]5.5910,[37]5.5842,[38]5.5830,[39]5.6007,[40]5.6489,[41]5.6705,[42]5.7087,[43]5.6691,[44]5.7252,[45]5.7333,[46]5.7109,[47]5.7339,[48]5.7094,[49]5.7091,[50]5.6732,[51]5.6723,[52]5.6612,[53]5.7068,[54]5.6919,[55]5.6746,[56]5.7039,[57]5.7216,[58]5.7506,[59]5.7711,[60]5.8203,[61]5.8140,[62]5.8770,[63]5.9124,[64]5.9200,[65]5.9666,[66]5.9779,[67]5.9953,[68]6.0186,[69]6.0574,[70]6.0977,[71]6.1288,[72]6.1646,[73]6.2214,[74]6.2343,[75]6.2465,[76]6.2631,[77]6.2779,[78]6.2673,[79]6.2932,[80]6.2917,[81]6.3064,[82]6.3096,[83]6.2596,[84]6.2498,[85]6.2448,[86]6.2274,[87]6.1733,[88]6.1496,[89]6.1336,[90]6.1261,[91]6.1483,[92]6.1463,[93]6.1470,[94]6.1464,[95]6.1756,[96]6.1722,[97]6.1655,[98]6.1605,[99]6.1498,[100]6.1515,[101]6.1733,[102]6.1686,[103]6.1866,[104]6.1963,[105]6.1995,[106]6.2158,[107]6.2158,[108]6.2279,[109]6.2259,[110]6.2221,[111]6.2422,[112]6.2637,[113]6.2656,[114]6.2657,[115]6.2763,[116]6.2652,[117]6.2701,[118]6.2959,[119]6.3161,[120]6.3495,[121]6.3670,[122]6.3884,[123]6.4297,[124]6.4484,[125]6.4410,[126]6.4766,[127]6.5113,[128]6.5357,[129]6.5198,[130]6.5278,[131]6.5228,[132]6.5127,[133]6.4982,[134]6.5065,[135]6.5045,[136]6.4930,[137]6.4864,[138]6.4679,[139]6.4623,[140]6.4595,[141]6.4357,[142]6.4312,[143]6.4036,[144]6.3851,[145]6.3772,[146]6.3671,[147]6.3749,[148]6.3756,[149]6.3690,[150]6.3682,[151]6.3738,[152]6.3656,[153]6.3531,[154]6.3464,[155]6.3540,[156]6.3511,[157]6.3668,[158]6.3688,[159]6.3706,[160]6.3734,[161]6.3867,[162]6.3576,[163]6.3464,[164]6.3206,[165]6.2886,[166]6.2589,[167]6.2199,[168]6.1877,[169]6.1728,[170]6.1616,[171]6.1359,[172]6.1212,[173]6.1062,[174]6.0770,[175]6.0573,[176]6.0427,[177]6.0220,[178]5.9998,[179]5.9822,[180]5.9737,[181]5.9537,[182]5.9350,[183]5.9200,[184]5.9184,[185]5.9106,[186]5.9122,[187]5.9176,[188]5.9162,[189]5.9321,[190]5.9319,[191]5.9508,[192]5.9696,[193]5.9884,[194]6.0015,[195]6.0242,[196]6.0385,[197]6.0574,[198]6.0731,[199]6.0758,[200]6.0794,[201]6.0721,[202]6.0901,[203]6.0993,[204]6.0983,[205]6.1095,[206]6.1140,[207]6.1121,[208]6.1206,[209]6.1234,[210]6.1290,[211]6.1392,[212]6.1453,[213]6.1552,[214]6.1567,[215]6.1604,[216]6.1745,[217]6.1906,[218]6.2049,[219]6.2055,[220]6.2023,[221]6.1946,[222]6.1926,[223]6.1833,[224]6.1725,[225]6.1678,[226]6.1881,[227]6.1932,[228]6.1988,[229]6.2034,[230]6.1987,[231]6.2135,[232]6.2018,[233]6.1859,[234]6.1693,[235]6.1461,[236]6.1389,[237]6.1259,[238]6.1282,[239]6.1140,[240]6.1027,[241]6.1067,[242]6.1085,[243]6.1046,[244]6.0927,[245]6.0886,[246]6.0769,[247]6.0657,[248]6.0585,[249]6.0547,[250]6.0577,[251]6.0493,[252]6.0452,[253]6.0351,[254]6.0298,[255]6.0191,[256]6.0013,[257]5.9896,[258]5.9815,[259]5.9821,[260]5.9734,[261]5.9676,[262]5.9616,[263]5.9554,[264]5.9316,[265]5.9313,[266]5.9285,[267]5.9218,[268]5.9307,[269]5.9300,[270]5.9309,[271]5.9372,[272]5.9404,[273]5.9406,[274]5.9428,[275]5.9503,[276]5.9565,[277]5.9715,[278]5.9804,[279]5.9907,[280]5.9938,[281]6.0045,[282]6.0097,[283]6.0251,[284]6.0343,[285]6.0435,[286]6.0572,[287]6.0567,[288]6.0634,[289]6.0553,[290]6.0389,[291]6.0237,[292]6.0068,[293]5.9921,[294]5.9917,[295]5.9905,[296]5.9954,[297]5.9934,[298]5.9952,[299]5.9910,[300]5.9791,[301]5.9777,[302]5.9694,[303]5.9612,[304]5.9520,[305]5.9486,[306]5.9355,[307]5.9372,[308]5.9388,[309]5.9228,[310]5.9181,[311]5.9118,[312]5.9117,[313]5.9061,[314]5.9025,[315]5.8862,[316]5.8819,[317]5.8666,[318]5.8462,[319]5.8594,[320]5.8731,[321]5.8785,[322]5.8736,[323]5.8677,[324]5.8668,[325]5.8777,[326]5.8780,[327]5.8799,[328]5.8837,[329]5.8896,[330]5.8924,[331]5.9047,[332]5.9009,[333]5.9087,[334]5.9016,[335]5.8951,[336]5.8967,[337]5.8950,[338]5.8952,[339]5.8901,[340]5.8859,[341]5.8931,[342]5.8950,[343]5.8998,[344]5.8990,[345]5.8990,[346]5.8961,[347]5.8984,[348]5.9023,[349]5.9050,[350]5.9030,[351]5.9031,[352]5.9033,[353]5.8970,[354]5.8961,[355]5.9001,[356]5.9031,[357]5.9003,[358]5.9089,[359]5.9116,[360]5.9089,[361]5.9080,[362]5.9156,[363]5.9273,[364]5.9336,[365]5.9390,[366]5.9413,[367]5.9498,[368]5.9463,[369]5.9477,[370]5.9492,[371]5.9440,[372]5.9495,[373]5.9540,[374]5.9528,[375]5.9513,[376]5.9579,[377]5.9542,[378]5.9576,[379]5.9629,[380]5.9553,[381]5.9519,[382]5.9466,[383]5.9443,[384]5.9432,[385]5.9420,[386]5.9432,[387]5.9432,[388]5.9384,[389]5.9336,[390]5.9274,[391]5.9200,[392]5.9153,[393]5.9155,[394]5.9182,[395]5.9160,[396]5.9080,[397]5.9152,[398]5.9192,[399]5.9270,[400]5.9263,[401]5.9288,[402]5.9301,[403]5.9323,[404]5.9382,[405]5.9295,[406]5.9257,[407]5.9251,[408]5.9272,[409]5.9383,[410]5.9488,[411]5.9584,[412]5.9738,[413]5.9850,[414]5.9919,[415]5.9978,[416]6.0054,[417]6.0177,[418]6.0216,[419]6.0269,[420]6.0353,[421]6.0458,[422]6.0496,[423]6.0553,[424]6.0653,[425]6.0739,[426]6.0805,[427]6.0845,[428]6.0919,[429]6.0965,[430]6.1036,[431]6.1182,[432]6.1215,[433]6.1202,[434]6.1159,[435]6.1170,[436]6.1198,[437]6.1288,[438]6.1361,[439]6.1322,[440]6.1295,[441]6.1248,[442]6.1239,[443]6.1252,[444]6.1259,[445]6.1240,[446]6.1261,[447]6.1287,[448]6.1320,[449]6.1294,[450]6.1297,[451]6.1259,[452]6.1120,[453]6.1025,[454]6.0967,[455]6.0974,[456]6.1025,[457]6.1047,[458]6.1028,[459]6.1029,[460]6.1109,[461]6.1076,[462]6.1061,[463]6.1100,[464]6.1094,[465]6.1074,[466]6.1007,[467]6.1022,[468]6.1022,[469]6.1042,[470]6.1048,[471]6.1009,[472]6.1045,[473]6.0984,[474]6.1003,[475]6.0942,[476]6.0965,[477]6.0893,[478]6.0887,[479]6.0953,[480]6.1004,[481]6.1028,[482]6.0986,[483]6.0947,[484]6.0963,[485]6.0953,[486]6.0903,[487]6.0897,[488]6.0883,[489]6.0838,[490]6.0820,[491]6.0791,[492]6.0735,[493]6.0700,[494]6.0682,[495]6.0668,[496]6.0630,[497]6.0580,[498]6.0565,[499]6.0519,[500]6.0430,[501]6.0377,[502]6.0377,[503]6.0359,[504]6.0272,[505]6.0293,[506]6.0299,[507]6.0249,[508]6.0211,[509]6.0209,[510]6.0233,[511]6.0280,[512]6.0313,[513]6.0329,[514]6.0386,[515]6.0338,[516]6.0329,[517]6.0332,[518]6.0329,[519]6.0351,[520]6.0373,[521]6.0384,[522]6.0406,[523]6.0411,[524]6.0463,[525]6.0495,[526]6.0511,[527]6.0526,[528]6.0477,[529]6.0483,[530]6.0433,[531]6.0413,[532]6.0465,[533]6.0487,[534]6.0478,[535]6.0512,[536]6.0459,[537]6.0446,[538]6.0490,[539]6.0505,[540]6.0531,[541]6.0540,[542]6.0545,[543]6.0569,[544]6.0581,[545]6.0569,[546]6.0579,[547]6.0537,[548]6.0487,[549]6.0481,[550]6.0456,[551]6.0432,[552]6.0417,[553]6.0379,[554]6.0356,[555]6.0325,[556]6.0317,[557]6.0345,[558]6.0311,[559]6.0315,[560]6.0316,[561]6.0317,[562]6.0287,[563]6.0284,[564]6.0333,[565]6.0341,[566]6.0344,[567]6.0316,[568]6.0314,[569]6.0301,[570]6.0329,[571]6.0336,[572]6.0341,[573]6.0335,[574]6.0298,[575]6.0287,[576]6.0286,[577]6.0269,[578]6.0255,[579]6.0260,[580]6.0205,[581]6.0175,[582]6.0168,[583]6.0178,[584]6.0177,[585]6.0101,[586]6.0036,[587]6.0034,[588]6.0072,[589]6.0127,[590]6.0157,[591]6.0176,[592]6.0161,[593]6.0123,[594]6.0126,[595]6.0107,[596]6.0144,[597]6.0117,[598]6.0085,[599]6.0108,[600]6.0096,[601]6.0082,[602]6.0089,[603]6.0109,[604]6.0121,[605]6.0155,[606]6.0172,[607
+llama_print_timings:        load time =  3104.64 ms
+llama_print_timings:      sample time =     0.00 ms /     1 runs   (    0.00 ms per token,      inf tokens per second)
+llama_print_timings: prompt eval time = 391171.34 ms / 335360 tokens (    1.17 ms per token,   857.32 tokens per second)
+llama_print_timings:        eval time =     0.00 ms /     1 runs   (    0.00 ms per token,      inf tokens per second)
+llama_print_timings:       total time = 438845.70 ms
+]6.0164,[608]6.0120,[609]6.0128,[610]6.0167,[611]6.0156,[612]6.0179,[613]6.0151,[614]6.0103,[615]6.0036,[616]6.0063,[617]6.0006,[618]5.9954,[619]5.9903,[620]5.9769,[621]5.9703,[622]5.9680,[623]5.9697,[624]5.9700,[625]5.9706,[626]5.9701,[627]5.9731,[628]5.9738,[629]5.9740,[630]5.9771,[631]5.9824,[632]5.9883,[633]5.9877,[634]5.9911,[635]5.9926,[636]5.9899,[637]5.9868,[638]5.9896,[639]5.9858,[640]5.9867,[641]5.9871,[642]5.9928,[643]5.9945,[644]5.9957,[645]5.9944,[646]5.9981,[647]5.9945,[648]5.9953,[649]5.9957,[650]5.9992,[651]6.0037,[652]6.0045,[653]6.0082,[654]6.0019,[655]6.0010,
+Final estimate: PPL = 6.0010 +/- 0.03370

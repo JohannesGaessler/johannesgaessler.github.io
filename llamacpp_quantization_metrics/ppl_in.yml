@@ -1,0 +1,10 @@
+batch_size: 1024
+n_gpu_layers: 99
+threads: 1
+mlock: true
+
+binary: perplexity
+file: wikitext-2-raw/wiki.test.raw
+# chunks: 1
+
+logdir: log_ppl
