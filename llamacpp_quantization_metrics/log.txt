@@ -1,0 +1,140 @@
+=== Q4_0 ===
+Model size: 3.56 GiB
+Perplexity: 5.966694
+RMS logits: 6.4194e-01 +- 2.6739e-03
+Mean prob diffs: -6.1943e-03
+STD prob diffs: 4.7691e-02
+RMS probs: 4.8091e-02 +- 3.2271e-04
+
+Discarded during correction: 4.24%
+
+=== Q4_1 ===
+Model size: 3.95 GiB
+Perplexity: 6.001011
+RMS logits: 7.4797e-01 +- 3.1986e-03
+Mean prob diffs: -8.3283e-03
+STD prob diffs: 5.1544e-02
+RMS probs: 5.2213e-02 +- 3.5856e-04
+
+Discarded during correction: 4.24%
+
+=== Q5_0 ===
+Model size: 4.33 GiB
+Perplexity: 5.829191
+RMS logits: 3.3836e-01 +- 2.5083e-03
+Mean prob diffs: -1.0959e-03
+STD prob diffs: 2.5753e-02
+RMS probs: 2.5776e-02 +- 2.0147e-04
+
+Discarded during correction: 4.24%
+
+=== Q5_1 ===
+Model size: 4.72 GiB
+Perplexity: 5.853055
+RMS logits: 3.3937e-01 +- 1.7570e-03
+Mean prob diffs: -2.4398e-03
+STD prob diffs: 2.5018e-02
+RMS probs: 2.5136e-02 +- 2.1950e-04
+
+Discarded during correction: 4.24%
+
+=== Q8_0 ===
+Model size: 6.64 GiB
+Perplexity: 5.801266
+RMS logits: 7.4246e-02 +- 7.6008e-04
+Mean prob diffs: -7.9424e-06
+STD prob diffs: 6.9985e-03
+RMS probs: 6.9985e-03 +- 8.1228e-05
+
+Discarded during correction: 4.24%
+
+=== Q2_K ===
+Model size: 2.63 GiB
+Perplexity: 6.446231
+RMS logits: 1.6808e+00 +- 9.3935e-03
+Mean prob diffs: -2.7971e-02
+STD prob diffs: 9.5560e-02
+RMS probs: 9.9569e-02 +- 5.4573e-04
+
+Discarded during correction: 4.24%
+
+=== Q3_K_S ===
+Model size: 2.75 GiB
+Perplexity: 6.294733
+RMS logits: 1.3440e+00 +- 4.2525e-03
+Mean prob diffs: -2.2907e-02
+STD prob diffs: 8.3962e-02
+RMS probs: 8.7031e-02 +- 4.9141e-04
+
+Discarded during correction: 4.24%
+
+=== Q3_K_M ===
+Model size: 3.07 GiB
+Perplexity: 6.027225
+RMS logits: 7.8546e-01 +- 2.6638e-03
+Mean prob diffs: -1.1507e-02
+STD prob diffs: 5.8247e-02
+RMS probs: 5.9372e-02 +- 3.9066e-04
+
+Discarded during correction: 4.24%
+
+=== Q3_K_L ===
+Model size: 3.35 GiB
+Perplexity: 5.987222
+RMS logits: 7.2806e-01 +- 2.5221e-03
+Mean prob diffs: -8.9787e-03
+STD prob diffs: 5.3269e-02
+RMS probs: 5.4021e-02 +- 3.7963e-04
+
+Discarded during correction: 4.24%
+
+=== Q4_K_S ===
+Model size: 3.59 GiB
+Perplexity: 5.888985
+RMS logits: 5.0052e-01 +- 2.0265e-03
+Mean prob diffs: -5.0621e-03
+STD prob diffs: 3.8725e-02
+RMS probs: 3.9054e-02 +- 2.7155e-04
+
+Discarded during correction: 4.24%
+
+=== Q4_K_M ===
+Model size: 3.80 GiB
+Perplexity: 5.880324
+RMS logits: 4.2331e-01 +- 1.9717e-03
+Mean prob diffs: -4.3586e-03
+STD prob diffs: 3.2650e-02
+RMS probs: 3.2940e-02 +- 2.5994e-04
+
+Discarded during correction: 4.24%
+
+=== Q5_K_S ===
+Model size: 4.33 GiB
+Perplexity: 5.822184
+RMS logits: 3.2355e-01 +- 1.7203e-03
+Mean prob diffs: -1.1886e-03
+STD prob diffs: 2.4427e-02
+RMS probs: 2.4456e-02 +- 1.9604e-04
+
+Discarded during correction: 4.24%
+
+=== Q5_K_M ===
+Model size: 4.45 GiB
+Perplexity: 5.828166
+RMS logits: 2.3983e-01 +- 1.2860e-03
+Mean prob diffs: -1.0047e-03
+STD prob diffs: 1.8866e-02
+RMS probs: 1.8893e-02 +- 1.5800e-04
+
+Discarded during correction: 4.24%
+
+=== Q6_K ===
+Model size: 5.15 GiB
+Perplexity: 5.809471
+RMS logits: 1.6149e-01 +- 1.3805e-03
+Mean prob diffs: -5.2424e-04
+STD prob diffs: 1.2701e-02
+RMS probs: 1.2712e-02 +- 1.1252e-04
+
+Discarded during correction: 4.24%
+
