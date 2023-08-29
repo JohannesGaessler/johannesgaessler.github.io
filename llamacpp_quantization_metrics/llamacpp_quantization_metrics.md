@@ -21,7 +21,7 @@ We can now calculate the perplexity like this:
 $$\mathrm{PPL} = \exp \left(- \frac{1}{M}  \sum_{m=1}^M \ln p_m \right) .$$
 
 So effectively the perplexity is the exponential of the average *negative log-likelihood* per token.
-The perplexity is by definition positive and a higher value corresponds to better predictions.
+The perplexity is by definition positive and a lower value corresponds to better predictions.
 Without further investigation we can also notice an asymmetry:
 for $p_m \rightarrow 1$ the perplexity is bounded at 0 but for $p_m \rightarrow 0$ it can grow indefinitely.
 
@@ -45,19 +45,20 @@ On the other extreme end, this is what the corresponding plots look like for Q2_
 
 ![Q2_K logit mean std](plots/logit_mean_std/logit_mean_std_q2_k.png)
 
-For this quantization format the first thing to notice is that the absolute differences in logits are much larger which should not be surprising given the much larger rounding error.
+For this quantization format the first thing to notice is that the absolute differences in logits are much larger.
+This should not be surprising given the much larger rounding error.
 But what is also noticeable is that the mean of the distribution has significantly shifted downwards, especially for tokens where the unquantized model performed well.
 This general trend is mostly continuous as the BPW of the quantization scheme are varied.
-However, there are some weird edge cases like Q5_0 where the correct logits on average actually *increase*:
+However, there are some weird edge cases like Q5_0 where the values of the correct logits on average actually *increase*:
 
 ![Q5_0 logit mean std](plots/logit_mean_std/logit_mean_std_q5_0.png)
 
 Regardless, both subjectively and objectively (as measured by perplexity) Q5_0 performs worse than F16.
 This is because any kind of noise on the logits is detrimental.
 The more noise there is the more does the distribution of token probabilities get pushed towards a *uniform distribution* where each token has a constant and equal probability.
-But at this point we should remind ourselves that the actual values of logits are not relevant - what matters are the probabilities that the model assigns to each token.
+But at this point we should remind ourselves that the logits are not immediately equivalent to those aforementioned probabilities.
+Due to the use of softmax the logits could (in theory) be varied without affecting the actual token probabilities.
 So let us look at how quantization affects the correct token probabilities for Q8\_0 and Q2\_K:
-
 
 ![Q8_0 prob diff hist](plots/prob_diff_hist/prob_diff_hist_q8_0.png)
 
@@ -71,7 +72,7 @@ The reason for this becomes apparent if we look at the token probability distrib
 The token probabilities have two clusters: one close to 0 and one close to 1.
 In those regions softmax is very flat so changes in the logits result in only small changes in the token probabilities.
 Now, let us think back to the beginning of this blog: the goal is to find a good metric for measuring the quality loss from quantization.
-The metric proposed here is the *root mean square** of the differences in token probabilities:
+The metric proposed here is the *root mean square* of the differences in token probabilities:
 
 $$\mathrm{RMS}_p^2 = \frac{ \sum_{m=1}^M (p_{nm}^\mathrm{Q} - p_{nm}^\mathrm{F16})^2 }{ M },$$
 
