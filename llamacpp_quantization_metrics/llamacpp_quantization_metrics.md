@@ -16,7 +16,7 @@ $$p_n := \mathrm{softmax}(l_n) = \exp(l_n) \cdot \left[ \sum_{j=1}^N \exp(l_j) \
 From these probabilities the model can then sample to produce a prediction for the next token.
 To calculate perplexity the model is instead given a text consisting of $M$ tokens and the probability that it assigned to the "correct" token is compared to its predictions:
 
-$$\mnathrm{PPL} = \exp \left( \frac{- \ln p_{nm}}{M} \right)$$.
+$$\mathrm{PPL} = \exp \left( \frac{- \ln p_{nm}}{M} \right)$$.
 
 So effectively the perplexity is the exponential of the average *negative log-likelihood* per token.
 The perplexity is by definition positive and a higher value corresponds to better predictions.
