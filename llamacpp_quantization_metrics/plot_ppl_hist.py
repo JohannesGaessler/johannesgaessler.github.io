@@ -84,15 +84,18 @@ for quantization in QUANTIZATIONS:
     prob_diffs_mean     = np.mean(prob_diffs)
     prob_diffs_std      = np.std(prob_diffs)
 
+    ppl_diff_err = perplexities[quantization] * np.std(logit_diffs) / np.sqrt(logit_diffs.shape[0] - 1)
+
     print(f"=== {quantization} ===")
     print(f"Model size: {MODEL_SIZES[quantization]/1024**3:.2f} GiB")
-    print(f"Perplexity: {perplexities[quantization]}")
+    print(f"Perplexity: {perplexities[quantization]:.6f}")
+    print(f"Perplexity_diff: {perplexities[quantization] - perplexities['F16']:.4e} +- {ppl_diff_err:.4e}")
 
     rms_logits = np.sqrt(np.mean(np.square(logit_diffs)))
     rms_probs  = np.sqrt(np.mean(np.square(prob_diffs)))
 
-    rms_logits_err = np.std(np.square(logit_diffs)) / np.sqrt(logit_diffs.shape[0]) / (2 * rms_logits)
-    rms_probs_err  = np.std(np.square(prob_diffs))  / np.sqrt(prob_diffs.shape[0])  / (2 * rms_probs)
+    rms_logits_err = np.std(np.square(logit_diffs)) / np.sqrt(logit_diffs.shape[0] - 1) / (2 * rms_logits)
+    rms_probs_err  = np.std(np.square(prob_diffs))  / np.sqrt(prob_diffs.shape[0] - 1)  / (2 * rms_probs)
 
     rmss_logits.append(rms_logits)
     rmss_probs.append(rms_probs)
