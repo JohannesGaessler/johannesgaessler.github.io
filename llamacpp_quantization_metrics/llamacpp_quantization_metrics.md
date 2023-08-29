@@ -14,14 +14,16 @@ These logits cannot be interpreted sensibly on their own but they can be convert
 $$p_n := \mathrm{softmax}(l_n) = \exp(l_n) \cdot \left[ \sum_{j=1}^N \exp(l_j) \right]^{-1}.$$
 
 From these probabilities the model can then sample to produce a prediction for the next token.
-To calculate perplexity the model is instead given a text consisting of $M$ tokens and the probability that it assigned to the "correct" token is compared to its predictions:
+To calculate perplexity the model is instead given a text consisting of $M$ tokens.
+There is only a single token that actually appears at position $m$ and the model assigns it a probability $p_m$.
+We can now calculate the perplexity like this:
 
-$$\mathrm{PPL} = \exp \left(- \frac{1}{M}  \sum_{m=1}^M \ln p_{nm} \right)$$.
+$$\mathrm{PPL} = \exp \left(- \frac{1}{M}  \sum_{m=1}^M \ln p_m \right) .$$
 
 So effectively the perplexity is the exponential of the average *negative log-likelihood* per token.
 The perplexity is by definition positive and a higher value corresponds to better predictions.
 Without further investigation we can also notice an asymmetry:
-for $p_{nm} \rightarrow 1$ the perplexity is bounded at 0 but for $p_{nm} \rightarrow 0$ it can grow indefinitely.
+for $p_m \rightarrow 1$ the perplexity is bounded at 0 but for $p_m \rightarrow 0$ it can grow indefinitely.
 
 If we now quantize one or more tensors of the model this necessarily introduces *rounding error* somewhere in our model.
 If the rounding error is small enough then it will simply propagate to the logits and add a bit of noise there.
