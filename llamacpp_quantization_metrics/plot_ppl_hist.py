@@ -98,6 +98,8 @@ for quantization in QUANTIZATIONS:
     rmss_probs.append(rms_probs)
 
     print(f"RMS logits: {rms_logits:.6f} +- {rms_logits_err:.6f}")
+    print(f"Mean prob diffs: {prob_diffs_mean:.4e}")
+    print(f"STD prob diffs: {prob_diffs_std:.4e}")
     print(f"RMS probs: {rms_probs:.6f} +- {rms_probs_err:.6f}")
     print()
 
@@ -136,7 +138,7 @@ for quantization in QUANTIZATIONS:
     plt.hist(probs["F16"], bins=np.linspace(0, 1, 101), density=True, weights=np.square(prob_diffs))
     plt.xlim(0, 1)
     plt.title(f"Rel. contribution to prob. RMS between 7b F16 and {quantization}")
-    plt.xlabel("Logit F16")
+    plt.xlabel("Token probability F16")
     plt.ylabel("Rel. contribution to probability RMS")
     os.makedirs("plots/prob_rms_contribution", exist_ok=True)
     plt.savefig(f"plots/prob_rms_contribution/prob_rms_contribution_{quantization.lower()}.png", dpi=240)
@@ -274,5 +276,21 @@ for quant_name, x, y in zip(QUANTIZATIONS, MODEL_SIZE_LIST_GIB, rmss_logits):
         y -= 0.02
     plt.text(x, y, quant_name, fontsize=6)
 plt.savefig("plots/combined/combined_rms_logits.png", dpi=240)
+
+plt.figure()
+plt.hist(probs["F16"], bins=np.linspace(0, 1, 101), density=True)
+plt.title("Probability distribution for perplexity, 7b F16")
+plt.xlim(0, 1)
+plt.xlabel("Token probability")
+plt.ylabel("Percentage")
+plt.savefig("plots/prob_hist_f16.png", dpi=240)
+
+plt.figure()
+plt.hist(probs["F16"], bins=np.linspace(0, 1, 101), density=True, weights=-np.log(probs["F16"]))
+plt.title("Rel. contributions to log. perplexity value, 7b F16")
+plt.xlim(0, 1)
+plt.xlabel("Token probability")
+plt.ylabel("Percentage")
+plt.savefig("plots/ppl_contributions_f16.png", dpi=240)
 
 # plt.show()
