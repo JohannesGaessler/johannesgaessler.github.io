@@ -1,9 +1,3 @@
----
-layout: page
-title: "llama.cpp Quantization Metrics"
-permalink: /llamacpp_quant_metrics
----
-
 # llama.cpp Quantization Metrics
 
 Language models are usually trained as 16 bit floats but for inference they are frequently *quantized* to lower precision which results in both faster inference and reduced memory use.
