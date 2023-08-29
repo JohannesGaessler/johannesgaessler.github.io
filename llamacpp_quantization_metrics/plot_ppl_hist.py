@@ -137,9 +137,9 @@ for quantization in QUANTIZATIONS:
     plt.figure()
     plt.hist(probs["F16"], bins=np.linspace(0, 1, 101), density=True, weights=np.square(prob_diffs))
     plt.xlim(0, 1)
-    plt.title(f"Rel. contribution to prob. RMS between 7b F16 and {quantization}")
+    plt.title(f"Rel. contribution to $\\mathrm{{RMS}}_p$ between 7b F16 and {quantization}")
     plt.xlabel("Token probability F16")
-    plt.ylabel("Percent contribution to $\mathrm{RMS}_p$")
+    plt.ylabel(r"Percent contribution to $\mathrm{RMS}_p$")
     os.makedirs("plots/prob_rms_contribution", exist_ok=True)
     plt.savefig(f"plots/prob_rms_contribution/prob_rms_contribution_{quantization.lower()}.png", dpi=240)
 
@@ -260,7 +260,7 @@ plt.savefig("plots/combined/combined_perplexity.png", dpi=240)
 plt.figure()
 plt.scatter(MODEL_SIZE_LIST_GIB, rmss_probs, marker=".")
 plt.xlabel("Model size [GiB]")
-plt.ylabel("Probability RMS")
+plt.ylabel(r"$\mathrm{RMS}_p$")
 for quant_name, x, y in zip(QUANTIZATIONS, MODEL_SIZE_LIST_GIB, rmss_probs):
     if quant_name == "Q5_K_S":
         y -= 0.001
