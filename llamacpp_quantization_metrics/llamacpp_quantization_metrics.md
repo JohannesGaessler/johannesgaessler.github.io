@@ -74,7 +74,7 @@ In those regions softmax is very flat so changes in the logits result in only sm
 Now, let us think back to the beginning of this blog: the goal is to find a good metric for measuring the quality loss from quantization.
 The metric proposed here is the *root mean square* of the differences in token probabilities:
 
-$$\mathrm{RMS}_p^2 = \frac{1}{M} \sum_{m=1}^M $$
+$$\mathrm{RMS}_p^2 = \frac{1}{M} (p_{nm}^\mathrm{Q} - p_{nm}^\mathrm{F16})^2$$
 
 where the upper indices indicate whether the probabilities correspond to the unquantized F16 or the quantized model.
 Effectively this metric calculates the standard deviation of the differences assuming that the mean is of the differences is 0.
