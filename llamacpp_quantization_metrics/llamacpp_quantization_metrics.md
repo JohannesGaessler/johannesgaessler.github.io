@@ -11,7 +11,7 @@ Let us start with considering how a model produces a probability distribution fo
 First the model puts out raw *logits* $l_n$ for each token.
 These logits cannot be interpreted sensibly on their own but they can be converted to probabilities by using *softmax*:
 
-$$p_n := \mathrm{softmax}(l_n) = \frac{\exp(l_n)}{\sum_{j=1}^N \exp(l_j)} .$$
+$$p_n := \mathrm{softmax}(l_n) = \frac{\exp(l_n)}{\sum_j^N \exp(l_j)} .$$
 
 From these probabilities the model can then sample to produce a prediction for the next token.
 To calculate perplexity the model is instead given a text consisting of $M$ tokens and the probability that it assigned to the "correct" token is compared to its predictions:
